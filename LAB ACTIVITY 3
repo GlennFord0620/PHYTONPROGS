@@ -1,0 +1,14 @@
+def check_number(num):
+    if num % 2 == 0:
+        print(f"{num} Even number yan bossing.")
+    else:
+        print(f"{num} Odd number yan bossing.")
+
+
+print("Check natin yan kung Odd or Even number!")
+
+try:
+    glenn = int(input("pili ka kahit anong number bebe ko: "))
+    check_number(glenn)  
+except ValueError:
+    print("Mali yan boss number lang dapat.")
