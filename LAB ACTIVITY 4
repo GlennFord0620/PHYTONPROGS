@@ -1,0 +1,25 @@
+def ilang_taon(age):
+    
+    if age < 0:
+        print("Invalid age! wag mag enter ng negative age.")
+    
+    elif age <= 12:
+        print("ATABS, CHILD.")
+    elif age <= 19:
+        print("TUMATANDA KANA, TEEN.")
+    elif age <= 64:
+        print("MEDYO MATANDA KANA, ADULT.")
+    else:
+        print("TANDA KANA, SENIOR.")
+
+
+print("Welcome sa age classifier na kung saan malalaman mo dito kung anong uri kana ng pagkatao")
+
+while True:
+    try:
+        
+        glenn = input("Ilang taon kana tol? : ")
+        
+        ilang_taon(int(glenn))
+    except ValueError:
+        print("Hindi pwede yang may decimal point!.")
